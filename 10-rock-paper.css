@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    
+}
+*{
+    font-family: arial;
+    transition: scale 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.title-game{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #ffffff;
+    margin-bottom: 45px;
+}
+.move-button{
+    width: 160px;
+    height: 160px;
+    border: 3px solid white;
+    background-color: inherit;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.move-button:active{
+    background-color: white;
+    animation: popup;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-play-state: end;
+}
+.move-button:active + .result{
+    animation: popup;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-play-state: end;
+}
+.move-button img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.result{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 50px 0 25px 0px;
+}
+.img-move{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.move {
+    color: white;
+    font-size: 28px;
+}
+.score{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.playerMove-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.reset-score{
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 30px;
+}
+.reset-score:active{
+    background-color: inherit;
+    color: white;
+    scale: 0.9;
+}
+@keyframes popup{
+    0%{
+        scale: 0.5;
+    }
+    70%{
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+@media(max-width:720px) {
+    *{
+        scale: 0.95;
+    }
+}
+@media(max-width:555px){
+    *{
+        scale: 0.90;
+    }
+}
