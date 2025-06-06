@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(25,25,25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
+}
+*{
+    font-family: arial;
+    transition: scale 0.25s;
+}
+p{
+    color: white;
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    transition: all 0.25s;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 42px;
+    background-color: rgb(55, 55, 55);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+button:active{
+    opacity: 0.5;
+}
+.result-calculate{
+    font-size: 68px;
+    width: 441px;
+    padding: 0 8px;
+    min-height: 78px;
+}
+.add-yellow{
+    background-color: orange;
+}
+.clear-button{
+    font-size: 28px;
+}
+.p-for-clear{
+    width: 445px;
+
+}
+@media (max-width: 560px){
+    *{
+        scale: 0.93;
+    }
+    p{
+        gap: 8px;
+        margin: 8px 0;
+    }
+    .p-for-clear{
+        width: 424px;
+    }
+    .result-calculate{
+        width: 400px;
+    }
+}
