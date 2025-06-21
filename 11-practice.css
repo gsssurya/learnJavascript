@@ -1,0 +1,56 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.action {
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.action:hover {
+    opacity: 0.9;
+}
+.action:active {
+    opacity: 0.75;
+}
+.todo-input-row, .todolist-row{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    margin-bottom: 10px;
+    column-gap: 10px;
+    align-items: center;
+}
+.todo-input-row{
+    align-items: stretch;
+}
+.todolist-row{
+    row-gap: 8px;
+}
+.todo-name, .todo-date{
+    padding: 6px;
+    width: 184px;
+}
+.todo-date{
+    width: auto;
+}
+.add-button{
+    padding: 6px;
+    width: 100px;
+    border-radius: none;
+    background-color: green;
+    border: none;
+    color: white;
+}
+.alert {
+    color: red;
+    margin: 8px 0 16px 0;
+}
+.name-todo{
+    margin: 0 8px 0 0;
+}
+.delete-button{
+    padding: 6px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    height: 36.5px;
+}

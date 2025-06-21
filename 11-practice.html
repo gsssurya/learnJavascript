@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Todo List</title>
+    <link rel="stylesheet" href="11-practice.css">
+</head>
+<body>
+    <p>Todo List</p>
+    <div class="todo-input-row">
+
+        <input class="todo-name" type="text" placeholder="Todo name" name="" id="" onkeydown="addToArrayByEnter(event)">
+        <input class="js-due-date todo-date" type="date">
+        <button class="add-button action" onclick="addToArray()">Add</button>
+    </div>
+
+    <p class="js-for-confirm alert"></p>
+    <div class="js-todo-list-container todolist-row"></div>
+
+
+    <script src="11-practice.js"></script>
+</body>
+</html>
